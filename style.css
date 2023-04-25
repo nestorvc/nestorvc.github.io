@@ -1,0 +1,156 @@
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 120px auto;
+}
+
+#hero {
+  display: flex;
+}
+
+.hero-title {
+  display: flex;
+  max-width: 650px;
+  margin-right: 150px;
+}
+
+.hero-title img {
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+}
+
+#hero a {
+  width: 200px;
+  background-color: #4A8BF5;
+  padding: 20px 0;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+#features {
+  margin: 100px auto;    
+  display: flex;
+}
+
+.feature {
+  text-align: center;
+  margin: 0 20px;
+  width: 100%;
+  line-height: 1.5  
+}
+
+.feature img {
+  width: 216px;
+  height: 216px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.feature strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feature span {
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+}
+
+#video {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 100px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+    margin: 40px auto;
+  }
+
+  #hero {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .hero-title img {
+    margin-bottom: 20px;
+  }
+
+  #hero a {
+    width: 100%;
+  }
+
+  #features {
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 0 0 50px 0;
+  }
+
+  .feature img {
+    width: 270px;
+    height: 270px;
+  }
+}
